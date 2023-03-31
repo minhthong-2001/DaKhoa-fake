@@ -1,0 +1,142 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --pagination-background: #fff;
+  --pagination-navigate-border-color: #808e9b;
+  --pagination-active-border-color: #ffb451;
+  --pagination-active-color: #ffb451;
+  --pagination-color: rgb(0, 0, 0);
+  --primary-color: linear-gradient(to bottom, #77a1d3, #79cbca, #e684ae);
+
+  background: #f3efe0;
+
+  /* 
+  const statusData: any = {
+    ACTIVE: 'green-600',
+    INACTIVE: 'red-500',
+    APPROVED: 'green-600',
+    'NOT APPVOVED': 'red-500',
+    PENDING: 'red-500',
+    CONFIRMED: 'yellow-500',
+    PAID: 'green-600',
+    DELIVERED: 'green-600',
+    DELIVERING: 'violet-600',
+    CANCELLED: 'slate-300',
+  }; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: rgb(255, 255, 255);
+  }
+}
+
+.container {
+  padding: 0 2rem;
+}
+.h-inherit {
+  height: inherit;
+}
+.input-icons span {
+  position: absolute;
+}
+
+.input-icons {
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  color: green;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: green;
+}
+
+.pagination > li {
+  align-items: center;
+  color: var(--pagination-color);
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+.pagination > li > a {
+  padding: 13px;
+}
+
+.pagination > li.selected {
+  border: solid 2px var(--pagination-active-border-color);
+  border-radius: 40px;
+  color: var(--pagination-active-color);
+}
+
+.next,
+.previous {
+  font-size: 24px !important;
+  height: 60px;
+  position: absolute;
+  width: 150px;
+}
+
+.next {
+  right: 0;
+}
+
+.pagination {
+  align-items: center;
+  background-color: var(--pagination-background);
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+}
+
+.pagination-page {
+  font-weight: 700;
+}
+
+.previous {
+  left: 0;
+}
+
+.paginator-container {
+  font-weight: 600;
+  font-size: 20px;
+  background-color: var(--pagination-background);
+  height: 60px;
+}

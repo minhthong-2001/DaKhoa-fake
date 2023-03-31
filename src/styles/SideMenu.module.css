@@ -1,0 +1,33 @@
+.logo {
+  background-color: #5BC0F8;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.logout {
+  width: 310px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.logout > p {
+  float: left;
+  margin-right: 5px;
+}
+.icon {
+  color: #fff;
+}
+.logout:hover {
+  border: 3px solid #fff;
+}
+
+.side-menu {
+  background: var(--primary-color);
+  min-height: 100vh;
+}
